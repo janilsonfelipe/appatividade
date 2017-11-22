@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
   devise_for :models
   resources :aeronaves
   resources :alunos
