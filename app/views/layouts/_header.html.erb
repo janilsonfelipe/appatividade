@@ -19,13 +19,13 @@
       
       
 
-        <% if current_user %>
+        <% if current_model %>
             <li><%= link_to 'Alunos', alunos_path %></li>
             <li><%= link_to 'Aeronaves', aeronaves_path %></li>
-            <li><%= link_to 'Editar Profile', edit_user_registration_path %></li>
-            <li><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to 'Editar Profile', edit_model_registration_path %></li>
+            <li><%= link_to 'Sair', destroy_model_session_path, method: :delete %></li>
         <% else %>       
-            <li><%= link_to 'Login', new_user_session_path %></li>
+            <li><%= link_to 'Login', new_model_session_path %></li>
         <% end %>
 
         
