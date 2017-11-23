@@ -52,3 +52,38 @@
 
 <%= link_to 'Edit', edit_aluno_path(@aluno) %> |
 <%= link_to 'Back', alunos_path %>
+
+<table>
+    <tr>
+    <td><p id="notice"><%= notice %></p></td>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>CPF</th>
+      <th>Endereço</th>
+      <th>Profissão</th>
+      <th>Email</th>
+      <th>CNH</th>
+      <th>Escolaridade</th>
+      <th>Instituição</th>
+      <th>Curso</th>
+      <th>Editar</th>
+      <th>Excluir</th>
+    </tr>
+    <tr>
+    <td><p id="notice"><%= notice %></p></td>
+      <td><%= @aluno.nome %></td>
+      <td><%= @aluno.sobrenome %></td>
+      <td><%= @aluno.cpf %></td>
+      <td><%= @aluno.endereco %></td>
+      <td><%= @aluno.profissao %></td>
+      <td><%= @aluno.email %></td>
+      <td><%= @aluno.cnh %></td>
+      <td><%= @aluno.escolaridade %></td>
+      <td><%= @aluno.instituicao %></td>
+      <td><%= @aluno.curso %></td>
+      <td><%= link_to 'Edit', edit_aluno_path(@aluno) %></td>
+      
+    </tr>
+    
+   
+  </table>
